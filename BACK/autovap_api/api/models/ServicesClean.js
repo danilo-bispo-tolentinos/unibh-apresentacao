@@ -21,6 +21,10 @@ module.exports = {
       type: 'number',
       allowNull: true
     },
+    isActive: {
+      type: 'boolean',
+      allowNull: true
+    },
   },
 
 };
