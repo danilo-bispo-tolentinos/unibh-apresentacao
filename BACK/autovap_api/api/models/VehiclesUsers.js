@@ -37,8 +37,7 @@ module.exports = {
       allowNull: true
     },
     idUser: {
-      type: 'number',
-      allowNull: true
+      model: 'User'
     },
   },
 
