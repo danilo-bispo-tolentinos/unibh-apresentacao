@@ -9,6 +9,7 @@ module.exports = {
 
     // Create/Criar
     create: async function (req, res) {
+        console.log('BATI AQUI!!!!!');
         let statusData = req.allParams();
         let statusFind = await Status.find({ name: statusData.name }).then();
         if (statusFind.length > 0) {

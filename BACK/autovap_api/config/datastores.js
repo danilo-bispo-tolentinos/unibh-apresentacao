@@ -49,8 +49,7 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
     adapter: require('sails-mysql'),
-    url: 'mysql://autovap:autovap@localhost:3306/autovap',
-
+    url: 'mysql://autovap:autovap0498@autovap.curfni4dogxz.us-east-1.rds.amazonaws.com:3306/autovap',
   },
 
 

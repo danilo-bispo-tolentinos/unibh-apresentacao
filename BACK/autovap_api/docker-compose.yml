@@ -1,0 +1,44 @@
+version: "3.2"
+services:
+  nodejs:
+    build: 
+      context: .
+    image: autovap_server_compose
+    networks:
+      - frontend
+      - backend
+    environment:
+      - MYSQL_HOST=mysql-on
+      - MYSQL_USER=autovap
+      - MYSQL_PASS=autovap
+      - MYSQL_DB=autovap
+    ports:
+      - "30001:1337"
+    container_name: autovap_server_nodejs
+  mysql:
+    image: mysql:5.7
+    networks:
+      - backend
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=autovap
+      - MYSQL_PASSWORD=autovap 
+      - MYSQL_DATABASE=autovap
+    container_name: mysql-on
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.7
+    depends_on:
+      - mysql
+    networks:
+      - backend
+    ports:
+      - "30002:80"
+    environment:
+      - PMA_HOST=mysql-on
+      - PMA_PORT= 3306
+    volumes:
+      - /sessions
+    container_name: autovap_server_mysql
+networks:
+  frontend:
+  backend:
