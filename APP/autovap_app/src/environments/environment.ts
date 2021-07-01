@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api_endpoint: 'https://4f285ea24237.ngrok.io/',
+  api_endpoint_slim: 'https://4f285ea24237.ngrok.io/'
 };
 
 /*

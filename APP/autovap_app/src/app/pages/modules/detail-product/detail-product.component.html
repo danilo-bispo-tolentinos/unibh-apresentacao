@@ -1,0 +1,23 @@
+<ion-content [fullscreen]="true" class="bgGeral">
+  <app-header-home></app-header-home>
+  <div class="container" *ngIf="product.imageProduct || product.imageProduct !== '/'">
+    <img [src]="product.imageProduct" alt="">
+    <img src="/assets/images/image-no/no-photo.jpg" alt="" srcset="" class="img-products" *ngIf="!product.imageProduct || product.imageProduct === '/'">
+    <div>
+      <br>
+      <h3>
+        <span>{{product.price | currency:'BRL':true:'1.2-2'}}/{{product.qtd}} uns.</span>
+        <div style="float: right;">
+          <button class="btn btn-sm btn-success" *ngIf="qtdValue > 0"><ion-icon name="cart-outline" style="position: relative; top: 1.5px;"></ion-icon> Comprar</button> 
+          <button class="btn btn-sm btn-dark" style="border-radius: 7px 0px 0px 7px !important;" (click)="clickCountMinus()">-</button>
+          <span class="btn btn-sm btn-dark" style="border-radius: 0px !important;">{{qtdValue}}</span>
+          <button class="btn btn-sm btn-dark" style="border-radius: 0px 7px 7px 0px !important;" (click)="clickCountPlus()">+</button>
+        </div>
+      </h3>
+      <br>
+      <h2>{{product.name}}</h2>
+      <p>{{product.description}}</p>
+    </div>
+    <button class="btn btn-success w-100" *ngIf="qtdValue > 0"><ion-icon name="cart-outline"></ion-icon> Add no carrinho</button>
+  </div>
+</ion-content>

@@ -31,15 +31,8 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
-            "scripts": [],
-            "aot": false,
-            "vendorChunk": true,
-            "extractLicenses": false,
-            "buildOptimizer": false,
-            "sourceMap": true,
-            "optimization": false,
-            "namedChunks": true
+            "styles": ["./node_modules/@angular/material/prebuilt-themes/indigo-pink.css", "src/theme/variables.scss", "src/global.scss", "node_modules/bootstrap/scss/bootstrap.scss"],
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -97,7 +90,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "styles": [],
+            "styles": [ "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"],
             "scripts": [],
             "assets": [
               {
@@ -120,12 +113,14 @@
           }
         },
         "lint": {
-          "builder": "@angular-eslint/builder:lint",
+          "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
+            "tsConfig": [
+              "tsconfig.app.json",
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json"
+            ],
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -171,6 +166,7 @@
     }
   },
   "cli": {
+    "analytics": "6e499153-a859-463b-a4f4-dd18c0498bdb",
     "defaultCollection": "@ionic/angular-toolkit"
   },
   "schematics": {

@@ -1,5 +1,10 @@
 {
-  "name": "autovap_app",
-  "integrations": {},
+  "name": "autoVapApp",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
   "type": "angular"
 }

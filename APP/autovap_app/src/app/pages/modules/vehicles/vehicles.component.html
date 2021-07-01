@@ -1,0 +1,58 @@
+<ion-content [fullscreen]="true" class="bgGeral">
+  <app-header-home></app-header-home>
+  <div class="container" style="margin-top: 12px;">
+    <button class="w-100 btn btn-info" style="margin-bottom: 18px;" (click)="OpenSheet()">
+      <span class="txt-btn">Criar Veículo</span>
+    </button>
+    <div>
+      <div *ngFor="let details of listMyVehicles">
+        <app-card-vehicle [detailCar]="details"></app-card-vehicle>
+      </div>
+
+
+
+    </div>
+  </div>
+  <bottom-sheet [(State)]="BottomSheetState" [Fullscreen]="true">
+    <div class="container">
+      <form [formGroup]="formMyCarCreate">
+        <h2 class="title-bs">Criar veículo</h2>
+        <mat-form-field class="col-12" appearance="outline">
+          <mat-label>Nome</mat-label>
+          <input matInput placeholder="Ex. 2016" type="text" formControlName="name">
+        </mat-form-field>
+        <h2 class="title-bs">Selecione o tipo do veíulos</h2>
+        <mat-radio-group aria-label="Select an option" class="col-12" formControlName="typeVehicle">
+          <mat-radio-button (change)="radioChange($event)" [value]="1">Carro</mat-radio-button>
+          <mat-radio-button (change)="radioChange($event)" [value]="2">Moto</mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field appearance="outline" class="col-12" style="margin-top: 12px;">
+          <mat-label>Marca</mat-label>
+          <mat-select formControlName="nameBrand">
+            <mat-option *ngFor="let vh of arrayVehicles" [value]="vh.name" (click)="selectedBrand(vh.id)">
+              {{vh.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="col-12">
+          <mat-label>Veículo</mat-label>
+          <mat-select formControlName="nameVehicle">
+            <mat-option *ngFor="let vh of arrayVehiclesName" [value]="vh.name">
+              {{vh.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="col-12" appearance="outline">
+          <mat-label>Placa</mat-label>
+          <input matInput placeholder="Ex. AAA-0000 ou AAA0A000" formControlName="placaVehicle">
+        </mat-form-field>
+        <mat-form-field class="col-12" appearance="outline">
+          <mat-label>Cor</mat-label>
+          <input matInput placeholder="Ex. Vermelho" formControlName="color">
+        </mat-form-field>
+        <button class="btn btn-success col-12" (click)="createVehicle()">Salvar veículo</button>
+      </form>
+      <br><br>
+    </div>
+  </bottom-sheet>
+</ion-content>

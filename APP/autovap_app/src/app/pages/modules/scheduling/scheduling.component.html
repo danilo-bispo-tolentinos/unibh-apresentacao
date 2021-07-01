@@ -1,0 +1,56 @@
+<ion-content [fullscreen]="true" class="bgGeral">
+  <app-header-home></app-header-home>
+  <div class="container" style="margin-top: 12px;">
+    <button class="w-100 btn btn-info" style="margin-bottom: 18px;" (click)="OpenSheet()">
+      <span class="txt-btn">Criar Agendamento</span>
+    </button>
+    <div>
+      <div class="text-center container">
+        
+        <div *ngFor="let item of listSchedulling">
+          <app-card-list-one [result]="item"></app-card-list-one>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  <bottom-sheet [(State)]="BottomSheetStateScheduling" (StateChange)="StateChanged($event)" [Fullscreen]="true">
+    <div class="container">
+      <form [formGroup]="formSchedulling">
+        <h2 class="title-bs">Agendar limpeza</h2>
+        <mat-form-field class="col-12" appearance="outline">
+          <mat-label>Horario</mat-label>
+          <input matInput placeholder="Ex. 2016" type="datetime-local" formControlName="schedulingDate">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="col-12" style="margin-top: 12px;">
+          <mat-label>Meus Veículos</mat-label>
+          <mat-select formControlName="idVehicle">
+            <mat-option *ngFor="let vh of listMyVehicles" [value]="vh.id">
+              {{vh.brand}} {{vh.model}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="col-12" style="margin-top: 12px;">
+          <mat-label>Serviços de Limpeza</mat-label>
+          <mat-select formControlName="idServicesClean">
+            <mat-option *ngFor="let vh of listServicesClean" [value]="vh.id">
+              R$ {{vh.price}} - {{vh.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <h2 class="title-bs">Método de pagamento</h2>
+        <mat-radio-group aria-label="Select an option" class="col-12" formControlName="typePayment">
+          <mat-radio-button (change)="radioChange($event)" [value]="item.id" *ngFor="let item of listPaymentAll">
+            {{item.name}}</mat-radio-button>
+        </mat-radio-group><br>
+        <span style="font-size: xx-small;">Pagamento será realizado na Loja</span>
+        <mat-form-field class="col-12" appearance="outline">
+          <mat-label>Observação</mat-label>
+          <textarea matInput placeholder="Ex. O tecido do banco e anti-penetrante"
+            formControlName="description"></textarea>
+        </mat-form-field>
+        <button class="btn btn-success col-12" (click)="createSchedulling()">Agendar</button>
+      </form>
+    </div>
+  </bottom-sheet>
+</ion-content>

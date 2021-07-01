@@ -1,0 +1,49 @@
+ion-content {
+    --background: #efeeea;
+}
+
+.box-info {
+    height: 50px;
+    width: 50px;
+    background: url(https://image.shutterstock.com/image-vector/car-time-icon-600w-430712905.jpg);
+    border-radius: 5px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border: solid 2px #000;
+}
+
+.box-info-two {
+    height: 50px;
+    width: 50px;
+    background: url(https://www.vebeco.nl/media/uploads/2020/08/01/employees/img_avatar.png);
+    border-radius: 5px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border: solid 2px #000;
+}
+
+.txt-title-top {
+    font-family: "Meta Pro Cond Black";
+    letter-spacing: 0.8px;
+    span {
+        font-family: "Meta Pro Medium";
+        color: #5d5c5e;
+    }
+}
+
+.subTitle {
+    font-family: "Meta Pro Cond Black";
+    letter-spacing: 1.6px;
+    line-height: 20px;
+}
+
+.box-experience {
+    height: 90px;
+    width: 90px;
+    background-color: black;
+    border-radius: 5px;
+}

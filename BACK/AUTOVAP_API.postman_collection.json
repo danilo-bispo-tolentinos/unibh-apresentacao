@@ -1,0 +1,1300 @@
+{
+	"info": {
+		"_postman_id": "e2a4e209-e108-42a3-a6e9-28e07c8d7a21",
+		"name": "AUTOVAP_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "Getall/ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/payment/all",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"payment",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create/Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Cheque",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/payment/create",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"payment",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "newName",
+									"value": "PIX",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/payment/update",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"payment",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete/Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/payment/delete/5",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"payment",
+								"delete",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Status",
+			"item": [
+				{
+					"name": "Getall/ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/status/all",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"status",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create/Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Cancelado",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/status/create",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"status",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete/Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/status/delete/1",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"status",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Getall/ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/employee/all",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"employee",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create/Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Recepcionista",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/employee/create",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"employee",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "newName",
+									"value": "Gerente",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/employee/update",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"employee",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete/Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/employee/delete/1",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"employee",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TypeUser",
+			"item": [
+				{
+					"name": "Getall/ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/typeUser/all",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"typeUser",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create/Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Cliente",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/typeUser/create",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"typeUser",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "newName",
+									"value": "Funcionario",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/typeUser/update",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"typeUser",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete/Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/typeUser/delete/1",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"typeUser",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ServicesClean",
+			"item": [
+				{
+					"name": "Getall/ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/servicesclean/all",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"servicesclean",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create/Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Limpeza geral",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Limpeza 100% detalhada",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "200.00",
+									"type": "text"
+								},
+								{
+									"key": "isActive",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/servicesclean/create",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"servicesclean",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "newName",
+									"value": "Limpeza Simples II",
+									"type": "text"
+								},
+								{
+									"key": "newDescription",
+									"value": "Limpeza com cera",
+									"type": "text"
+								},
+								{
+									"key": "newPrice",
+									"value": "45.00",
+									"type": "text"
+								},
+								{
+									"key": "newisActive",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/servicesclean/update",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"servicesclean",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete/Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/servicesclean/delete/1",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"servicesclean",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VehiclesUsers",
+			"item": [
+				{
+					"name": "Getall/ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/vehiclesusers/all",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"vehiclesusers",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getall/ListarTodos Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/vehiclesusers/byId/2",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"vehiclesusers",
+								"byId",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create/Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Trabalho",
+									"type": "text"
+								},
+								{
+									"key": "typeVehicle",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "brand",
+									"value": "HONDA",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "Civic",
+									"type": "text"
+								},
+								{
+									"key": "placa",
+									"value": "PFR-0D04",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "Preto",
+									"type": "text"
+								},
+								{
+									"key": "isActive",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "idUser",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/vehiclesusers/create",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"vehiclesusers",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Trabalho",
+									"type": "text"
+								},
+								{
+									"key": "typeVehicle",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "brand",
+									"value": "HONDA",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "CIVIC LXR",
+									"type": "text"
+								},
+								{
+									"key": "placa",
+									"value": "PFR-0D04",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "Preto",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/vehiclesusers/update",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"vehiclesusers",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete/Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/vehiclesusers/delete/2",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"vehiclesusers",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Getall/ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/users/all",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"users",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getall/ListarTodos Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/vehiclesusers/all",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"vehiclesusers",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create/Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Danilo Bispo",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "31989786646",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "daniloservulo@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "M",
+									"type": "text"
+								},
+								{
+									"key": "dateBirthDate",
+									"value": "10/05/2001",
+									"type": "text"
+								},
+								{
+									"key": "isActive",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "userTypeId",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/users/create",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"users",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update/Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Danilo Bispo Sérvulo",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "31989786644",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "daniloservulo@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "M",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "Preto",
+									"type": "text"
+								},
+								{
+									"key": "isActive",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "userTypeId",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/users/update",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"users",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete/Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/users/delete/1",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"users",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Scheduling",
+			"item": [
+				{
+					"name": "Getall/ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/scheduling/all",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"scheduling",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetallById/ListarTodosPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/scheduling/byId/2",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"scheduling",
+								"byId",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create/Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "schedulingDate",
+									"value": "27/06/2021",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "N/D",
+									"type": "text"
+								},
+								{
+									"key": "idUser",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "idVehicle",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "idServicesClean",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "typePayment",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "idEmployee",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/scheduling/create",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"scheduling",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status/Status",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "status",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/scheduling/updateStatus",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"scheduling",
+								"updateStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update/Atualizar Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "schedulingDate",
+									"value": "27/06/2021",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "N/D/s",
+									"type": "text"
+								},
+								{
+									"key": "idUser",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "idVehicle",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "idServicesClean",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "typePayment",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "idEmployee",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/scheduling/update",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"scheduling",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete/Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://lb-autovap-1450699268.us-east-1.elb.amazonaws.com/scheduling/delete/4",
+							"protocol": "http",
+							"host": [
+								"lb-autovap-1450699268",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"scheduling",
+								"delete",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
